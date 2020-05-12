@@ -2,10 +2,10 @@
   "name": "chat-server",
   "version": "1.0.0",
   "description": "Chat server based on socket.io",
-  "author": "Marcin Kunysz",
+  "author": "Michel sales",
   "scripts": {
-    "start": "nodemon server",
-    "start-prod": "node server",
+    "start": "node server.js",
+    "start-prod": "node server.js",
     "lint": "eslint --ignore-path .gitignore ."
   },
   "devDependencies": {
