@@ -14,7 +14,7 @@ class Events {
       });
 
       socket.on('disconnect', (user) => {
-        delete this.users[user.id];
+        delete this.users[user];
         io.emit('users', this.users);
       });
 
