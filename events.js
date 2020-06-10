@@ -9,12 +9,12 @@ class Events {
   socketEvents(io) {
     io.on('connection', (socket) => {
       socket.on('connected', (user) => {
-        this.users[socket.id] = user;
+        this.users[socket] = user;
         io.emit('users', this.users);
       });
 
       socket.on('disconnect', () => {
-        delete this.users[socket.id];
+        delete this.users[socket];
         io.emit('users', this.users);
       });
 
